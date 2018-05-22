@@ -1,0 +1,11 @@
+input {
+    color: white;
+}
+
+input.switch {
+    background-color: green
+}
+
+input.delete {
+    background-color: red
+}

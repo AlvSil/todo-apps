@@ -1,0 +1,14 @@
+<div>
+  <ul>
+    <li *ngFor="let todo of todos$ | async">
+      <label [id]="todo.id">{{ todo.value }}</label>
+      <button (click)="removeTodo(todo.id)">Delete</button>
+    </li>
+  </ul>
+  <div>
+    <p>Todo</p>
+    <input #todoInput placeholder="todo" id="1"/>
+    <button (click)="addTodo(todoInput)">Create</button>
+    <button (click)="removeAllTodos()">Remove All</button>
+  </div>
+</div>

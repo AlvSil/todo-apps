@@ -1,0 +1,13 @@
+<div>
+  <input type="text" placeholder="todo text"/>
+  <button>Add Todo</button>
+  <ul>
+    <li *ngFor="let todo of todos">
+      <label>
+        {{todo.text}}
+      </label>
+      <input type="button" class="switch" value="done"/>
+      <input type="button" class="delete" value="delete"/>
+    </li>
+  </ul>
+</div>
